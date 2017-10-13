@@ -1,0 +1,7 @@
+<ul>
+
+  <ng-container *ngFor="let item of config">
+    <li *ngIf="hasRoles(item.requiredRoles, user.roles)"><a href="{{item.route}}">{{item.label}}</a></li>
+  </ng-container>
+
+</ul>
